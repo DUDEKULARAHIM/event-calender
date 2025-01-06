@@ -1,0 +1,870 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar with Custom Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+
+       
+        <div class="date-controls">
+            <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+            <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+        </div>
+
+        
+        <div class="custom-date-input" id="customDateInput">
+            <label for="yearInput">Enter Year:</label>
+            <input type="number" id="yearInput" placeholder="e.g. 2024" />
+            <label for="monthInput">Enter Month:</label>
+            <input type="number" id="monthInput" placeholder="e.g. 10 (October)" min="1" max="12"/>
+            <button id="goToDate">Go</button>
+        </div>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+
+        <div class="date-controls">
+            <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+            <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+        </div>
+
+        <div class="custom-date-input" id="customDateInput">
+            <label for="yearInput">Enter Year:</label>
+            <input type="number" id="yearInput" placeholder="e.g. 2024">
+            <label for="monthInput">Enter Month:</label>
+            <input type="number" id="monthInput" placeholder="e.g. 10 (October)" min="1" max="12">
+            <button id="goToDate">Go</button>
+        </div>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+
+        <button id="addEventButton" style="display: none;">Add Event</button>
+
+        <div id="eventForm" style="display: none;">
+            <h3>Add Event</h3>
+            <form>
+                <label for="eventTitle">Title:</label>
+                <input type="text" id="eventTitle" required>
+                <label for="eventDesc">Description:</label>
+                <textarea id="eventDesc" required></textarea>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+
+        <h3>Events for Today:</h3>
+        <ul id="eventsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar with Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+
+        <div class="date-controls">
+            <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+            <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+        </div>
+
+        <div class="custom-date-input" id="customDateInput">
+            <label for="yearInput">Enter Year:</label>
+            <input type="number" id="yearInput" placeholder="e.g. 2024">
+            <label for="monthInput">Enter Month:</label>
+            <input type="number" id="monthInput" placeholder="e.g. 10 (October)" min="1" max="12">
+            <button id="goToDate">Go</button>
+        </div>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+
+        <button id="addEventButton" class="add-event-btn" style="display: none;">Add Event</button>
+
+        <div id="eventForm" class="event-form" style="display: none;">
+            <h3>Add Event</h3>
+            <form>
+                <label for="eventTitle">Title:</label>
+                <input type="text" id="eventTitle" required>
+                <label for="eventDesc">Description:</label>
+                <textarea id="eventDesc" required></textarea>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+
+        <h3>Events for Today:</h3>
+        <ul id="eventsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar with Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prevMonth">←</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextMonth">→</button>
+            </div>
+
+            <div class="date-controls">
+                <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+                <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+            </div>
+
+            <div class="custom-date-input" id="customDateInput">
+                <label for="yearInput">Enter Year:</label>
+                <input type="number" id="yearInput" placeholder="e.g. 2024">
+                <label for="monthInput">Enter Month:</label>
+                <input type="number" id="monthInput" placeholder="e.g. 10 (October)" min="1" max="12">
+                <button id="goToDate">Go</button>
+            </div>
+
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+
+            <button id="addEventButton" class="add-event-btn" style="display: none;">Add Event</button>
+
+            <div id="eventForm" class="event-form" style="display: none;">
+                <h3>Add Event</h3>
+                <form>
+                    <label for="eventTitle">Title:</label>
+                    <input type="text" id="eventTitle" required>
+                    <label for="eventDesc">Description:</label>
+                    <textarea id="eventDesc" required></textarea>
+                    <button type="submit">Add Event</button>
+                </form>
+            </div>
+
+            <h3>Events for Selected Date:</h3>
+            <ul id="selectedDateEvents"></ul>
+        </div>
+
+        <div class="all-events-container">
+            <h3>All Events</h3>
+            <ul id="allEventsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar with Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+
+       
+        <div class="date-controls">
+            <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+            <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+        </div>
+
+        
+        <div class="custom-date-input" id="customDateInput">
+            <label for="yearInput">Enter Year:</label>
+            <input type="number" id="yearInput" placeholder="e.g. 2024" />
+            <label for="monthInput">Enter Month:</label>
+            <input type="number" id="monthInput" placeholder="e.g. 10 (October)" min="1" max="12"/>
+            <button id="goToDate">Go</button>
+        </div>
+
+        
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+            </tbody>
+        </table>
+
+       
+        <div id="eventSection" class="event-section">
+            <button id="addEventButton" class="add-event-btn" style="display: none;">Add Event</button>
+            <div id="eventForm" class="event-form" style="display: none;">
+                <h3>Add Event</h3>
+                <form>
+                    <input type="text" id="eventTitle" placeholder="Event Title" required />
+                    <textarea id="eventDesc" placeholder="Event Description" required></textarea>
+                    <button type="submit">Save Event</button>
+                </form>
+            </div>
+            <div id="selectedDateEvents"></div>
+        </div>
+
+        <h3>All Events</h3>
+        <ul id="allEventsList"></ul>
+
+        <div id="eventDetails" class="event-details"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+
+        <div class="date-controls">
+            <button id="showCustomDate" class="show-custom-date-btn">Custom Date</button>
+            <button id="goToCurrent" class="go-to-current-btn">Go to Current Month</button>
+        </div>
+
+        <div class="custom-date-input" id="customDateInput">
+            <label for="yearInput">Year:</label>
+            <input type="number" id="yearInput" placeholder="e.g., 2024">
+            <label for="monthInput">Month:</label>
+            <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 10 (October)">
+            <button id="goToDate">Go</button>
+        </div>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+
+        <div class="event-section">
+            <button id="addEventBtn" class="add-event-btn">Add Event</button>
+            <div class="event-form" id="eventForm">
+                <input type="text" id="eventTitle" placeholder="Event Title">
+                <textarea id="eventDescription" placeholder="Event Description"></textarea>
+                <button id="saveEventBtn">Save Event</button>
+            </div>
+        </div>
+
+        <h3>All Events</h3>
+        <ul id="allEventsList"></ul>
+
+        <div id="eventDetails" class="event-details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul></ul>
+    </div>
+
+    <div id="eventDetails" class="events-box">
+      <h4>Event Details</h4>
+    </div>
+
+    <div id="eventForm" class="event-form">
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <textarea id="eventDescription" placeholder="Event Description"></textarea>
+      <button id="saveEventBtn">Save Event</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="date-controls">
+      <button id="goToCurrent">Go to Current Date</button>
+      <button id="toggleCustomDate">Custom Date</button>
+    </div>
+
+    <div id="customDateInput" class="custom-date-input">
+      <label for="yearInput">Year:</label>
+      <input type="number" id="yearInput" placeholder="e.g., 2025">
+      <label for="monthInput">Month:</label>
+      <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 7 (July)">
+      <button id="goToCustomDate">Go</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+      <ul id="todayEventList"></ul>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul id="allEventList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="date-controls">
+      <button id="goToCurrent">Go to Current Date</button>
+      <button id="toggleCustomDate">Custom Date</button>
+    </div>
+
+    <div id="customDateInput" class="custom-date-input">
+      <label for="yearInput">Year:</label>
+      <input type="number" id="yearInput" placeholder="e.g., 2025">
+      <label for="monthInput">Month:</label>
+      <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 7 (July)">
+      <button id="goToCustomDate">Go</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+      <ul id="todayEventList"></ul>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul id="allEventList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="date-controls">
+      <button id="goToCurrent">Go to Current Date</button>
+      <button id="toggleCustomDate">Custom Date</button>
+    </div>
+
+    <div id="customDateInput" class="custom-date-input">
+      <label for="yearInput">Year:</label>
+      <input type="number" id="yearInput" placeholder="e.g., 2025">
+      <label for="monthInput">Month:</label>
+      <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 7 (July)">
+      <button id="goToCustomDate">Go</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="addEventSection" class="add-event-box">
+      <h4>Add Event</h4>
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <textarea id="eventDescription" placeholder="Event Description"></textarea>
+      <button id="addEventButton">Add Event</button>
+    </div>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+      <ul id="todayEventList"></ul>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul id="allEventList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="date-controls">
+      <button id="goToCurrent">Go to Current Date</button>
+      <button id="toggleCustomDate">Custom Date</button>
+    </div>
+
+    <div id="customDateInput" class="custom-date-input">
+      <div>
+        <label for="yearInput">Year:</label>
+        <input type="number" id="yearInput" placeholder="e.g., 2025">
+      </div>
+      <div>
+        <label for="monthInput">Month:</label>
+        <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 7 (July)">
+      </div>
+      <button id="goToCustomDate">Go</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="addEventSection" class="add-event-box">
+      <h4>Add Event</h4>
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <textarea id="eventDescription" placeholder="Event Description"></textarea>
+      <button id="addEventButton">Add Event</button>
+    </div>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+      <ul id="todayEventList"></ul>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul id="allEventList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="date-controls">
+        <button id="toggleCustomDate">Custom Date</button>
+      <button id="goToCurrent">Go to Current Date</button>
+      <!-- <button id="toggleCustomDate">Custom Date</button> -->
+    </div>
+
+    <div id="customDateInput" class="custom-date-input">
+      <label for="yearInput">Year:</label>
+      <input type="number" id="yearInput" placeholder="e.g., 2025">
+      <label for="monthInput">Month:</label>
+      <input type="number" id="monthInput" min="1" max="12" placeholder="e.g., 7 (July)">
+      <button id="goToCustomDate">Go</button>
+    </div>
+
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+
+    <div id="todayEvents" class="events-box">
+      <h4>Today's Events</h4>
+      <ul id="todayEventList"></ul>
+      <button id="addEventButton" style="background-color: aqua;padding: 6px 10px;align-items: center;">Add Event</button>
+      <div id="eventForm" style="display:none;">
+        <input type="text" id="eventTitle" placeholder="Event Title">
+        <textarea id="eventDescription" placeholder="Event Description"></textarea>
+        <button id="saveEvent">Save Event</button>
+      </div>
+    </div>
+
+    <div id="allEventsList" class="events-box">
+      <h4>All Events</h4>
+      <ul id="allEventList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
